@@ -1,0 +1,13 @@
+＞今の状況を確認
+git status
+
+赤い文字が出てきたら、アップしてないやつ
+
+＞データをインデックスに追加
+git add .
+
+＞コミット
+git commit -m "コミット時のメッセージ"
+
+＞プッシュ
+git push -u origin main
