@@ -67,8 +67,11 @@ public class Ex4_2_4 {
 		System.out.println(randomNum[0]);
 		System.out.println(randomNum[1]);
 		
+		// 2)ユーザー入力
+		System.out.println("1桁の数字を入力してください。");
 		int input2 = new java.util.Scanner(System.in).nextInt();
 		
+		// 3)判定作業
 		for (int val : randomNum) {
 			if (val == input2) {
 				System.out.println("アタリ!");

@@ -1,3 +1,4 @@
+// gitへのプッシュの仕方
 ＞今の状況を確認
 git status
 
@@ -11,3 +12,16 @@ git commit -m "コミット時のメッセージ"
 
 ＞プッシュ
 git push -u origin main
+
+
+// gitからのプルの仕方
+＞フェッチ
+git fetch
+
+＞状況を確認
+git status
+
+＞プル
+git pull
+
+＞エクリプスに戻り、F5(リフレッシュ）⇒最新になる
