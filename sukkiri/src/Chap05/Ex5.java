@@ -1,12 +1,20 @@
 package Chap05;
 
-public class Ex5_1 {
+// P218 練習問題5
+public class Ex5 {
 
 	public static void main(String[] args) {
+		// 練習5-1 実行
 		introduceOnself();
 		System.out.println(" ");
+		
+		// 練習5-2 実行
 		email("ごご", "aaaa@gmail.com", "ががが");
+		
+		// 練習5-3 実行
 		email("bbb@mail.com", "がはは");
+		
+		// 練習5-4 実行
 		double x = 5.0;
 		double y = 3.0;
 		double calcT = calcTriangleArea(x, y);
@@ -24,7 +32,7 @@ public class Ex5_1 {
 		System.out.println("身長を入力してください。");
 		double height = new java.util.Scanner(System.in).nextDouble();
 		System.out.println("干支を入力してください。");
-		String eto = new java.util.Scanner(System.in).nextLine();
+		char eto = new java.util.Scanner(System.in).next().charAt(0);
 
 		System.out.println("こんにちは！私の名前は、" + name + "です。");
 		System.out.println("年齢は、" + age + "歳で、身長は、" + height + "cmです。");
@@ -45,7 +53,7 @@ public class Ex5_1 {
 	}
 	
 	public static double calcTriangleArea(double bottom, double height) {
-		double area = height * bottom / 2;
+		double area = (height * bottom) / 2;
 		return area;
 	}
 	
