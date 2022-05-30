@@ -13,6 +13,9 @@ git commit -m "コミット時のメッセージ"
 ＞プッシュ
 git push -u origin main
 
+>ログを確認（ちゃんとプッシュできたか確認できる）
+git log 
+
 
 
 // gitからのプルの仕方
