@@ -16,7 +16,7 @@ git push -u origin main
 >ログを確認（ちゃんとプッシュできたか確認できる）
 git log 
 
-
+（q で抜ける）
 
 // gitからのプルの仕方
 ＞フェッチ

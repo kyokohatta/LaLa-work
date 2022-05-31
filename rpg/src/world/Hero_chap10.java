@@ -4,11 +4,22 @@ public class Hero_chap10 {
 	public String name = "ミナト";
 	public int hp = 100;
 	
+	// コンストラクタの設定
+	public Hero_chap10() {
+		System.out.println("Heroのコンストラクタが動作");
+	}
+	public Hero_chap10(String name) {
+		System.out.println("Heroのコンストラクタが動作");
+		this.name = name;
+	}
+	
+	// メソッド
 	// 戦う
 	public void attack(Matango m) {
-		System.out.println(this.name + "の攻撃！");
+		System.out.println(this.name + "の攻撃！========");
 		m.hp -= 5;
-		System.out.println(m.suffix + "に5ポイントのダメージを与えた。");
+		System.out.println("キノコ" + m.suffix + "に5ポイントのダメージを与えた。");
+		System.out.println("キノコ" + m.suffix + "のHPは、" + m.hp + "になった。");
 	}
 	
 	// 逃げる
