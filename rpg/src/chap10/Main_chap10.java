@@ -30,7 +30,7 @@ public class Main_chap10 {
 		
 		pm.attack(h);
 		pm.attack(sh2); // SuperHeroは Heroの子クラスなので、Hero型に当てはまった。
-		h.attack(pm);
+		h.attack(pm);   // PoisonMatangoは Matangoの子クラスなので、Matango型に当てはまった。
 		sh2.attack(pm);
 
 	}

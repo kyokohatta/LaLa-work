@@ -1,16 +1,17 @@
 package world;
 
-public class Hero_chap10 {
-	public String name = "ミナト";
-	public int hp = 100;
+public class Hero_chap10 extends Character {
+	
+    // this.name = "ミナト";
+	// this.hp = 100;
 	
 	// コンストラクタの設定
 	public Hero_chap10() {
 		System.out.println("Heroのコンストラクタが動作");
 	}
 	public Hero_chap10(String name) {
+		super(name);
 		System.out.println("Heroのコンストラクタが動作");
-		this.name = name;
 	}
 	
 	// メソッド
@@ -26,4 +27,6 @@ public class Hero_chap10 {
 	public void run() {
 		System.out.println(this.name + "は、逃げ出した！");
 	}
+	
 }
+

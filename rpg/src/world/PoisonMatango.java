@@ -13,8 +13,9 @@ public class PoisonMatango extends Matango {
 		System.out.println("PoisonMatangoのコンストラクタが動作");
 	}
 	
-	// メソッド
+	// メソッド attack() .. オーバーライド
 	public void attack(Hero_chap10 h) {
+		// 親の
 		super.attack(h);
 		if (this.poisonCount > 0) {
 			System.out.println("さらに毒の胞子をばらまいた！");
