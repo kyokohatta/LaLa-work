@@ -7,6 +7,8 @@ public abstract class Monster {
 	public int mp = 10;
 	
 	// 
-	public abstract void attack();
-	public abstract void run();
+	public abstract void attack(Hero h);
+	public void run() {
+		System.out.println("モンスターは逃げだした！");
+	}
 }

@@ -39,8 +39,8 @@ public class Main09 {
 		h3.name = "アサカ";
 		h3.hp = 100;
 		Wizard w = new Wizard();
-		w.name = "スガワラ";
-		w.hp = 50;
+		w.setName("スガワラ");
+		w.setHp(50) ;
 		w.heal(h);  // ミナトを回復させる。(HP:100 → 110)
 		System.out.println(h.name + "のHP：" + h.hp );
 		w.heal(h3); // アサカを回復させる。(HP:100 → 110)

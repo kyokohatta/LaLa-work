@@ -4,13 +4,13 @@ public class Dancer extends Character {
 
 	// コンストラクタ
 	public Dancer() {
-		this.name = "ダンサー";
+		setName("ダンサー");
 	}
 	
 	// 実装されていない抽象メソッドのオーバーライド
 	@Override
 	public void attack(Matango m) {
-		System.out.println(this.name + "の攻撃 ========");
+		System.out.println(this.getName() + "の攻撃 ========");
 		System.out.println("敵に３ポイントのダメージ！");
 		m.hp -= 3;
 	}
@@ -18,7 +18,7 @@ public class Dancer extends Character {
 	
 	// 普通に Dancer 特有の追加メソッド
 	public void dance() {
-		System.out.println(this.name + "は、情熱的に踊った。");
+		System.out.println(this.getName() + "は、情熱的に踊った。");
 	}
 	
 
