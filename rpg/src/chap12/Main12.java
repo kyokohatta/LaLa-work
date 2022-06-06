@@ -11,7 +11,7 @@ public class Main12 {
 	public static void main(String[] args) {
 		// P470
 		System.out.println(">> P470 ");
-		Character c = new Wizard();
+		Character c = new Wizard(Wand("魔法の杖"));
 		// キャスト演算子を入れると、強制的にWizard型に入れられる。
 		// ダウンキャスト .. あいまいな型に入っている中身を厳密な型に代入する。
 		if (c instanceof Wizard) {

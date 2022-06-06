@@ -1,7 +1,9 @@
 package chap09;
 
 import world.Hero;
+import world.Hero_chap13;
 import world.Sword;
+import world.Wand;
 import world.Wizard;
 
 public class Main09 {
@@ -24,13 +26,13 @@ public class Main09 {
 		s.name = "炎の剣";
 		s.damage = 10;
 		
-		Hero h = new Hero();
-		h.name = "ミナト";
-		h.hp = 100;
+		Hero_chap13 h = new Hero_chap13("ミナト");
+		//h.name = "ミナト";
+		h.setHp(100);
 		h.sword = s;
-		System.out.println("HERO " + h.name + "は、" + h.sword.name + "を手に入れた。" );
+		System.out.println("HERO " + h.getName() + "は、" + h.sword.name + "を手に入れた。" );
 		
-		h.attack();
+		h.attack(m);
 		System.out.println(" ");
 		
 		// P345
@@ -38,7 +40,7 @@ public class Main09 {
 		Hero h3 = new Hero();
 		h3.name = "アサカ";
 		h3.hp = 100;
-		Wizard w = new Wizard();
+		Wizard w = new Wizard(Wand("魔法の杖"));
 		w.setName("スガワラ");
 		w.setHp(50) ;
 		w.heal(h);  // ミナトを回復させる。(HP:100 → 110)
@@ -59,6 +61,11 @@ public class Main09 {
 		System.out.println(">> P362ページ");
 		Hero p362 = new Hero();
 		System.out.println(p362.name);
+	}
+
+	private static Wand Wand(String string) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
 	}
 
 }
