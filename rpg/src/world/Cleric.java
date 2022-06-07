@@ -8,9 +8,9 @@ public class Cleric {
 	// フィールド
 	public String name;
 	public int hp = 50;
-	public final int MAX_HP = 50; // 定数フィールド
+	public static final int MAX_HP = 50; // 定数フィールド
 	public int mp = 10;
-	public final int MAX_MP = 10; // 定数フィールド
+	public static final int MAX_MP = 10; // 定数フィールド
 	
 	// メソッド
 	// selfAid().. MPを5消費→最大HPまで回復

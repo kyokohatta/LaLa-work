@@ -1,10 +1,12 @@
 package v3;
 
+// 抽象(abstract)クラス
 public abstract class Player {
 	private String name;
 	private int hand;
 	private String result;
 	// 次の手を決める戦略の型(インターフェースの型に入れる) .. 多態性
+	// 実際には、newされた RandomNextHand か、InputNextHandが入る
 	private NextHand nextHand;
 	
 	// コンストラクタ
@@ -12,10 +14,11 @@ public abstract class Player {
 		this.nextHand = nextHand;
 	}
 	
+	String[] hands = {"グー", "チョキ", "パー"};
 	// メソッド toString()
 	// toString()のオーバーライド
 	public String toString() {
-		return this.name + " : " + this.hand + " : " + this.result;
+		return this.name + " : " + this.hands[this.hand] + " : " + this.result;
 	}
 	
 	// getter & setter
@@ -30,9 +33,10 @@ public abstract class Player {
 	public int getHand() {
 		return hand;
 	}
-
+	
+	// 引き数：なし
 	public void setHand() {
-		this.hand = nextHand.decideHand();
+		this.hand = this.nextHand.decideHand();
 	}
 
 	public String getResult() {
