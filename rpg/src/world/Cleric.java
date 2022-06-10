@@ -2,14 +2,14 @@ package world;
 
 import java.util.Random;
 
-// P.330 練習問題8
+// P.330 練習問題8　フィールド --> P552 練習問題14-2にて変更
 
 public class Cleric {
 	// フィールド
-	public String name;
-	public int hp = 50;
+	private String name;
+	private int hp = 50;
 	public static final int MAX_HP = 50; // 定数フィールド
-	public int mp = 10;
+	private int mp = 10;
 	public static final int MAX_MP = 10; // 定数フィールド
 	
 	// メソッド
@@ -42,6 +42,32 @@ public class Cleric {
 		System.out.println("MPが" + mpKaihuku + "、回復した。");
 		return mpKaihuku;
 	
+	}
+	
+	// getter setter
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
 	}
 	
 
