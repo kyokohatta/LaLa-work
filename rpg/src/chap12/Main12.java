@@ -5,13 +5,16 @@ import world.Hero_chap10;
 import world.Matango;
 import world.Monster;
 import world.Slime;
+import world.Wand;
 import world.Wizard;
 
 public class Main12 {
 	public static void main(String[] args) {
 		// P470
 		System.out.println(">> P470 ");
-		Character c = new Wizard(Wand("魔法の杖"));
+		
+		Wand wand = new Wand("魔法の杖");
+		Character c = new Wizard(wand);
 		// キャスト演算子を入れると、強制的にWizard型に入れられる。
 		// ダウンキャスト .. あいまいな型に入っている中身を厳密な型に代入する。
 		if (c instanceof Wizard) {

@@ -1,6 +1,6 @@
 package world;
 
-public class Wizard {
+public class Wizard extends Character {
 	private int hp;
 	private int mp;
 	private String name;
@@ -16,6 +16,13 @@ public class Wizard {
 		h.setHp(h.getHp() + recovPoint);
 		System.out.println
 		  (h.getName() + "のHPを" + recovPoint + "回復した。");
+	}
+	public void heal(Hero h) {
+		int basePoint = 10;
+		int recovPoint = (int) (basePoint * this.wand.getPower());
+		h.hp = h.hp + recovPoint;
+		System.out.println
+		  (h.name + "のHPを" + recovPoint + "回復した。");
 	}
 
 	public void attack(Matango m) {

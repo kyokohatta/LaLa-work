@@ -2,6 +2,7 @@ package chap09;
 
 import world.Hero;
 import world.Hero_chap13;
+import world.Matango;
 import world.Sword;
 import world.Wand;
 import world.Wizard;
@@ -32,6 +33,7 @@ public class Main09 {
 		h.sword = s;
 		System.out.println("HERO " + h.getName() + "は、" + h.sword.name + "を手に入れた。" );
 		
+		Matango m = new Matango('A');
 		h.attack(m);
 		System.out.println(" ");
 		
@@ -43,8 +45,8 @@ public class Main09 {
 		Wizard w = new Wizard(Wand("魔法の杖"));
 		w.setName("スガワラ");
 		w.setHp(50) ;
-		w.heal(h);  // ミナトを回復させる。(HP:100 → 110)
-		System.out.println(h.name + "のHP：" + h.hp );
+		w.heal(h3);  // ミナトを回復させる。(HP:100 → 110)
+		System.out.println(h.getName() + "のHP：" + h.getHp() );
 		w.heal(h3); // アサカを回復させる。(HP:100 → 110)
 		w.heal(h3); // アサカを回復させる。(HP:110 → 120)
 		System.out.println(h3.name + "のHP：" + h3.hp );

@@ -1,21 +1,21 @@
 package world;
 
-public class Wizard {
+public class Wizard_teacher {
 	private int hp;
 	private int mp;
 	private String name;
 	private Wand wand;
 	
-	public Wizard(Wand wand) {
+	public Wizard_teacher(Wand wand) {
 		this.setWand(wand);
 	}
 	
 	public void heal(Hero h) {
 		int basePoint = 10;
 		int recovPoint = (int) (basePoint * this.wand.getPower());
-		h.setHp(h.getHp() + recovPoint);
+		h.hp = h.hp + recovPoint;
 		System.out.println
-		  (h.getName() + "のHPを" + recovPoint + "回復した。");
+		  (h.name + "のHPを" + recovPoint + "回復した。");
 	}
 
 	public void attack(Matango m) {
